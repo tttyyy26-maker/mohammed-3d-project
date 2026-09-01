@@ -1,13 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0f1410" />
-    <title>مشروع عرض المجسمات ثلاثية الأبعاد - الروبوتات والطائرات</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض المجسمات ثلاثية الأبعاد - الرئيسية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- مكتبة تشغيل المجسمات ثلاثية الأبعاد -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>معرض المجسمات 3D</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a> | 
+            <a href="robots.html">الروبوتات</a> | 
+            <a href="airplanes.html">الطائرات</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>مرحباً بك في المعرض التفاعلي</h2>
+        <p>استكشف التصاميم ثلاثية الأبعاد الحديثة للروبوتات والطائرات المتقدمة.</p>
+
+        <!-- مجسم 3D تفاعلي -->
+        <div class="viewer-box">
+            <h3>عرض 3D تفاعلي (اسحب بيدك للتدوير):</h3>
+            <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="مجسم رائد فضاء 3D" auto-rotate camera-controls style="width: 100%; height: 350px; border-radius: 10px;"></model-viewer>
+        </div>
+
+        <div class="image-box">
+            <h3>صورة المعرض الرئيسية:</h3>
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500" alt="صورة المعرض" width="400">
+        </div>
+    </main>
+</body>
 </html>
