@@ -1,36 +1,67 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قسم الطائرات - معرض 3D</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-</head>
-<body>
-    <header>
-        <h1>قسم الهندسة الجوية والطائرات</h1>
-        <nav>
-            <a href="index.html">الرئيسية</a> | 
-            <a href="robots.html">الروبوتات</a> | 
-            <a href="airplanes.html">الطائرات</a>
-        </nav>
-    </header>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
 
-    <main>
-        <h2>عالم الطيران والمجسمات الجوية</h2>
-        <p>استعراض لأحدث تصاميم الطائرات وتقنيات الطيران المتقدمة.</p>
+header {
+    background-color: #1e293b;
+    color: #38bdf8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
 
-        <!-- مجسم 3D تفاعلي -->
-        <div class="viewer-box">
-            <h3>مجسم ثلاثي الأبعاد تفاعلي:</h3>
-            <model-viewer src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb" alt="مجسم بدلة طيران 3D" auto-rotate camera-controls style="width: 100%; height: 350px; border-radius: 10px;"></model-viewer>
-        </div>
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
 
-        <div class="image-box">
-            <h3>صورة توضيحية للطائرات:</h3>
-            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500" alt="صورة طائرة حديثة" width="400">
-        </div>
-    </main>
-</body>
-</html>
+nav a:hover {
+    color: #38bdf8;
+}
+
+main {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+.viewer-box, .image-box {
+    margin-top: 25px;
+    background-color: #0f172a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
